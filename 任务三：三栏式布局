@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task3</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 20px;	
+			font-family: "华文行楷";
+			font-size: 20px;
+		}
+	    .content{
+			width: 100%;
+			height: 900px;				
+			border: 1px solid #999;
+			padding: 20px;
+			background: #eee;
+			position: relative;
+		}
+		.content .left{
+			padding: 20px;
+			/*margin-right: 20px;*/
+			width: 200px;
+			border: 1px solid #999;
+			background: white;
+			float: left;
+			position: relative;
+		}
+		.content .left .teamlogo{
+			width: 80px;
+			height: 80px;
+			border: 1px solid #999;
+			background: url("image/21.jpg") no-repeat;
+			background-size: 80px 80px;
+			float: left;
+		}
+		.content .left .teamname{
+			float: left;
+			width: 80px;
+			height: 80px;
+			margin-left: 20px;
+		}
+		/*浏览器自适应*/
+		.content .center{
+			border: 1px solid #999;
+			background: white;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 20px;
+			left: 260px;
+			right: 140px;
+			position: absolute;
+		}
+		.content .center .intro{
+			
+		}
+		.content .right{
+			width: 120px;
+			border: 1px solid #999;
+			background: white;
+			float: right;
+			right: 20px;
+			top: 20px;
+			position: absolute;
+		}
+		.content .right .perlogo{
+			width: 80px;
+			height: 80px;
+			margin: 20px;
+			border: 1px solid #999;
+			background: url("image/21.jpg") no-repeat;
+			background-size: 80px 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="left">
+			<div class="teamlogo"></div>
+			<div class="teamname">团队名称</div>				
+		</div>
+		<div class="center">
+			<div class="intro">
+				<p>关于团队的简单介绍</p>
+				<p>名称：百度学院春季班“2+1”小组</p>
+				<p>成员：丘玉秀、陈斌斌、庄树程</p>
+				<p>团队名字的由来：</p>
+				<p>1.有一个成员是13级的，其他两个成员是14级的，这是第一层“2+1”;</p>
+				<p>2.三个成员中,有两个男生，一个女生，这是第二层“2+1”。</p>				
+			</div>
+		</div>
+		<div class="right">
+			<div class="perlogo"></div>
+			<div class="perlogo"></div>
+			<div class="perlogo"></div>
+			<div class="perlogo"></div>
+		</div>
+	</div>
+</body>
+</html>
