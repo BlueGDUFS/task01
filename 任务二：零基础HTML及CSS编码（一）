@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2</title>
+	<style type="text/css">
+		body{
+			font-family: "黑体";
+			width: 100%;
+			height: 3800px;
+			padding: 0;
+			margin: 0;
+			background: #DEDEDE;
+		}
+		.header{
+			width: 100%;
+			height: 2%;
+			background: #333333;		
+		}
+		.body{
+			width: 94%;
+			height: 94%;
+			margin-top: 2%;
+			margin-left: 3%;
+			background-color: #DEDEDE; 			
+		}
+		.footer{
+			width: 100%;
+			height: 3%;
+			background: #333333;
+		}
+		.header .list1{
+			top: 3%;
+			right: 5%;
+			position: absolute;
+		}
+		.header .list1 li{
+			display: inline;
+		}
+		.header .list1 a{
+			color: white;
+			text-decoration: none;
+		}
+		.body .passage1{
+			width: 100%;
+			height: 19%;
+			background: white;
+			border-right: 2px solid gray;
+			border-bottom: 2px solid gray;
+		}
+		.body .title1{
+			padding-left: 15px;
+			padding-top: 30px;
+			font-size: 25px;
+		}
+		.body .title2{
+			padding-left: 17px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 15px;
+			color: gray;
+		}
+		.body span.author,span.time{
+			padding-left: 19px;
+			font-size: 10px;
+			color: gray;
+		}
+		.body p{
+			padding-left: 17px;
+			padding-right: 17px;
+			line-height: 30px;
+			text-indent: 32px;
+		}
+		.body .pic1{
+			padding-left: 17px;			
+		}
+		.body .passage2{
+			width: 100%;
+			height: 22%;
+			margin-top: 2%;
+			background: white;
+			border-right: 2px solid gray;
+			border-bottom: 2px solid gray;
+		}
+		.body .passage2 ul li{
+			overflow: hidden;
+			line-height: 30px;
+		}
+		.body .part3{
+			width: 100%;
+			height: 26%;
+			margin-top: 2%;
+			background: white;
+			border-right: 2px solid gray;
+			border-bottom: 2px solid gray;
+		}
+		.body .part3 #pic3{
+			padding-top: 30px;
+			padding-left: 15px;
+
+		}
+		.body .part3 .pic{
+			width: 100px;
+			height: 100px;
+			margin-left: 10%;
+			border: 1px solid gray;			
+			background: url("image/17.jpg") no-repeat;
+			background-size: 60px 45px;
+			background-position: 40% 70%; 
+		}
+		.body .part3 .pic span.word{
+			padding-top: 10%;
+			font-size: 10px;
+		}
+		.body .part4{
+			width: 100%;
+			height: 10%;
+			margin-top: 2%;
+			background: white;
+			border-right: 2px solid gray;
+			border-bottom: 2px solid gray;
+		}
+		.body .part4 .list2{
+			margin-left: 30px;
+		}
+		.body .part4 .table1{
+			margin-left: 17px;			
+		}
+		.body .part4 .table1 table{
+			border-collapse: collapse;
+			border: 1pt solid black;
+		}
+		.body .part4 .table1 tr.line1{
+			background: #333333;
+			color: white;
+		}
+		.body .part4 .table1 tr.line2{
+			background: #CCCCCC;
+		}
+		.body .part5{
+			width: 100%;
+			height: 15%;
+			margin-top: 2%;
+			margin-bottom: 2%;
+			background: white;
+			border-right: 2px solid gray;
+			border-bottom: 2px solid gray;
+		}
+		.body .part5 .biaoti{
+			width:600px;
+			height: 30px;
+			margin-top: 30px;
+			margin-left: 15px;
+			padding-left: 15px;	
+			border-left: 3pt solid #CDCDCD;
+		}
+		.body .part5 .content{
+			margin-left: 23%;
+			margin-top: 2%;
+		}
+		.body .part5 .content .input1{
+			text-indent: 128px;
+		}
+		.body .part5 .content .input2{
+			text-indent: 32px;
+		}
+		.body .part5 .content .input3{
+			text-indent: 79px;
+		}
+		.body .part5 .content .input4{
+			text-indent: 45px;
+		}
+		.body .part5 textarea{
+			/*background-color: #FDF8E9;*/
+			border: 1pt solid black;
+			width: 480pt;
+			height: 70pt;
+			/*overflow: scroll;*/
+		}
+		.body .part5 input.button{
+			width: 90%;
+			height: 30px;
+			background: #3355D0;
+			border-radius:2em;
+			font-size: 16px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="list1">
+			<ul>
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#">导航链接四</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="body">
+		<div class="passage1">
+			<div class="title1"><b>文章一级标题</b></div>
+			<div class="title2"><b>文章二级标题</b></div>
+			<span class="author">文章作者</span> <span class="time">文章发表时间</span>
+			<p class="p1">这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落,换行了</br>
+			这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了</br>
+			这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com">这是有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，<b>这里有个粗体字</b>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。</p>
+			<div class="pic1"><img src="image/17.jpg" alt="blue sky" ></div>	
+		</div>
+		<div class="passage2">
+			<div class="title1"><b>另一篇文章一级标题</b></div>
+			<div class="title2"><b>文章二级标题</b></div>
+			<span class="author">文章作者</span> <span class="time">文章发表时间</span>
+			<p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落,换行了</br>			
+			这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了</br>
+			这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com">这是有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，<b>这里有个粗体字</b>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。</p>
+			<div class="pic1"><img src="image/17.jpg" alt="blue sky"></div>		
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</div>
+		<div class="part3">
+			<div id="pic3"><h2><b>图片</b></h2></div>			
+			<div class="pic"><center><span class="word">好看的图片</span></center></div><br></br>		
+			<div class="pic"><center><span class="word">好看的图片</span></center></div><br></br>	
+			<div class="pic"><center><span class="word">好看的图片</span></center></div><br></br>	
+			<div class="pic"><center><span class="word">好看的图片</span></center></div><br></br>	
+			<div class="pic"><center><span class="word">好看的图片</span></center></div><br></br>	
+			<div class="pic"><center><span class="word">好看的图片</span></center></div><br></br>	
+		</div>
+		<div class="part4">
+			<div class="title1"><b>最后一篇文章一级标题</b></div>
+			<div class="title2"><b>文章二级标题</b></div>
+			<span class="author">文章作者</span> <span class="time">文章发表时间</span>
+			<div class="list2">
+				<ol type="1">
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+			</div>
+			<div class="table1">
+				下面是一个表格，给表格加了一个border="1",好让你看出这是一个表格
+				<table border="1" width="98%" height="10%">
+				<tr class="line1">
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>			
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>			
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>			
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>			
+				</tr>
+				<tr class="line2">
+					<td><b>总计</b></td>
+					<td colspan="2"><b>1000</b></td>		
+				</tr>	
+				</table>
+			</div>		
+		</div>
+		<div class="part5">
+			<div class="biaoti">
+				<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+			</div>
+			<div class="content">
+				请输入邮箱地址：<input type="text" name="邮箱地址" value="这里是一个文本输入框" size="20" maxlength="20"><br></br>
+				<div class="input1"><font size="1px" color="gray">邮箱地址请按要求格式输入</font><br></br></div>
+				<div class="input2">请输入密码：<input type="password" name="密码" value="" size="6" maxlength="16"><br></br></div>
+				请重复输入密码：<input type="password" name="密码" value="" size="6" maxlength="16"><br></br>
+				<div class="input1"><font size="1" color="gray">密码请为6-16位英文数字</font><br></br></div>
+				<div class="input3">性别：<input type="radio" name="sex">男<input type="radio" name="sex" checked>女<br></br></div>
+				<div class="input3">
+				城市：<select name="address">
+					<option>北京
+					<option>上海
+					<option>广州
+					<option>深圳
+					<option>香港
+				</select><br></br>
+				</div>				
+				<div class="input3">爱好：
+				<input type="checkbox" name="favor1">
+				运动
+				<input type="checkbox" name="favor2">
+				艺术
+				<input type="checkbox" name="favor3">
+				科学<br></br></div>
+				<div class="input4">个人描述：
+				<textarea name="introduction" value="这是一个多行输入框，输入您的个人描述"></textarea><br></br></div>				
+			</div>
+			<center><input type="submit" value="确认提交" class="button"></center>
+		</div>		
+	<div class="footer">
+		<center><font color="white">Copyright © 2016 百度学院“2+1” 小组</font></center>
+	</div>
+</body>
+</html>
